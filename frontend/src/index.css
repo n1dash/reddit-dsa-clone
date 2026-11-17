@@ -1,0 +1,88 @@
+:root {
+  /* Backgrounds — deep charcoal scale */
+  --bg-primary:    #0d0f10;
+  --bg-secondary:  #161718;
+  --bg-card:       #1c1d1e;
+  --bg-tertiary:   #242526;
+  --bg-hover:      #1f2122;
+  /* Borders */
+  --border-color:  #2d2f30;
+  --border-light:  #3a3c3e;
+  /* Text */
+  --text-primary:  #d7dadc;
+  --text-secondary:#9a9b9c;
+  --text-muted:    #55575a;
+  /* Brand */
+  --reddit-orange:       #ff4500;
+  --reddit-orange-hover: #d93a00;
+  --reddit-orange-muted: rgba(255, 69, 0, 0.12);
+  --reddit-blue:   #7193ff;
+  --reddit-gold:   #ffd700;
+  --reddit-silver: #c0c0c0;
+  --reddit-bronze: #cd7f32;
+  --accent-purple: #9d4edd;
+  --accent-green:  #00ba7c;
+  /* Layout */
+  --header-height:        52px;
+  --sidebar-left-width:   252px;
+  --sidebar-right-width:  312px;
+  /* Radii */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-full: 9999px;
+  /* Type */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
